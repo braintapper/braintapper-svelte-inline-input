@@ -10,7 +10,7 @@ Brief description here
 Import the components you need in your <script> tag:
 
 ```
-  import Indent from "braintapper-svelte-inline-input";
+  import InlineIndent from "braintapper-svelte-inline-input";
 ```
 
 ## Example Markup
