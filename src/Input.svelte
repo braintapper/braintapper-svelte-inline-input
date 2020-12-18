@@ -99,7 +99,7 @@
 
   let clickCount = 0
 
-  clickReset = ()=> {
+  let clickReset = ()=> {
     switch (clickCount) {
       case 1:
         single()
