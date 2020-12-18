@@ -20,6 +20,7 @@
 
   export let doubleClick = true;
 
+  // html id
   export let id = undefined;
   export let delay = 250;
 
@@ -74,9 +75,9 @@
     switch (e.keyCode) {
       case 13:
         inputEl.blur();
-        unchanged = (value == item[idAttribute]);
+        let unchanged = (value == item[idAttribute]);
         if (!(unchanged && (value.length > 0))) {
-          eventObject = {
+          let eventObject = {
             _id: item[idAttribute]
           }
           eventObject[inputAttribute] = value;
@@ -144,6 +145,7 @@
     class={inputClasses}
     style={inputStyle}
     bind:this={inputEl}
+    {id}
     {type}
     {value}
     {placeholder}
