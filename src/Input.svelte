@@ -2,7 +2,7 @@
   
   import { tick, createEventDispatcher } from 'svelte'
 
-  dispatch = createEventDispatcher()
+  const dispatch = createEventDispatcher();
 
   export let style = undefined;
   export let inputStyle = undefined;
