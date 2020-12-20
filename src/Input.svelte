@@ -1,7 +1,11 @@
 <script>
-  
-  import { tick, createEventDispatcher } from 'svelte'
+  import Sugar from 'sugar-and-spice';
 
+  if (typeof Date.create == "undefined") {
+    // sugar was not already extended
+    Sugar.extend();
+  }  
+  import { tick, createEventDispatcher } from 'svelte'
   const dispatch = createEventDispatcher();
 
   export let style = undefined;
@@ -12,6 +16,7 @@
   export let inputClasses = '';
 
   // this control is for an item with an _id/id (depends on db type)
+  // TODO: get rid of all the old logic
   
   export let item = { _id: "", name: "" };
   export let inputAttribute = "name";
