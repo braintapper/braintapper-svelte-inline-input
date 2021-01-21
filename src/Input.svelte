@@ -17,10 +17,10 @@
 
   // this control is for an item with an _id/id (depends on db type)
   // TODO: get rid of all the old logic
-  
-  export let item = { _id: "", name: "" };
-  export let inputAttribute = "name";
   export let idAttribute = "_id";
+  export let item = {  name: "" };
+  export let inputAttribute = "name";
+
 
 
   export let doubleClick = true;
@@ -83,8 +83,9 @@
         let unchanged = (value == item[idAttribute]);
         if (!(unchanged && (value.length > 0))) {
           let eventObject = {
-            _id: item[idAttribute]
+            
           }
+          eventObject[idAttribute] = item[idAttribute]
           eventObject[inputAttribute] = value;
           dispatch("update",eventObject);
         }   
