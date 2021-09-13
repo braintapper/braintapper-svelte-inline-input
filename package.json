@@ -1,7 +1,7 @@
 {
     "name": "braintapper-svelte-inline-input",
-    "version": "0.0.6",
-    "description": "Svelte component for ...",
+    "version": "0.0.7",
+    "description": "Svelte component for inline input",
     "author": "braintapper",
     "license": "MIT",
     "repository": {
