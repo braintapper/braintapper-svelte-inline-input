@@ -180,6 +180,7 @@
 
   input {
     width: 100%;
+    background: transparent;
     color: var(--dark-red); }
 
   input::selection {
